@@ -40,3 +40,5 @@ RUN make all-target-libgcc CFLAGS_FOR_TARGET='-g -O2 -mcmodel=kernel -mno-red-zo
 # RUN make all-target-libgcc
 RUN make install-gcc
 RUN make install-target-libgcc
+
+ENV TOOLPREFIX=/opt/cross/bin/x86_64-elf-
