@@ -1,7 +1,7 @@
 FROM debian:10.2
 
 RUN apt-get update
-RUN apt-get -y install build-essential qemu wget qemu-utils gdb
+RUN apt-get -y install build-essential qemu wget qemu-utils gdb-multiarch
 # RUN apt-get -y install gcc-x86-64-linux-gnu
 # RUN apt-get -y install gcc-8-x86-64-linux-gnu
 
