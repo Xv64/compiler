@@ -6,6 +6,6 @@ docker:
 	export DOCKER_CLI_EXPERIMENTAL=enabled
 	docker manifest create "xv64/compiler:${VER}" \
     --amend  "xv64/compiler:${VER}-amd64" \
-    --amend  "xv64/compiler:${VER}-aarch64" \
+    --amend  "xv64/compiler:${VER}-aarch64"
 	docker manifest inspect "xv64/compiler:${VER}"
 	docker manifest push "xv64/compiler:${VER}"
